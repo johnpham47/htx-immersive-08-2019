@@ -1,13 +1,6 @@
 playing_board = [["_" for j in range(3)] for i in range(3)]
 player = "X"
-# board = [
-#     [0, 0, 0],
-#     [0, 0, 0],
-#     [0, 0, 0],
-# ]
-# print(board[0])
-# print(board[1])
-# print(board[2])
+
 
 def Board():
     for i in range(3):
@@ -21,27 +14,35 @@ def AskMove():
     col = int(input("Which column (1-3)?")) -1
     return row, col
 
-def Location():
+def Location(player):
     row, col = AskMove()
     playing_board[row][col] = player 
     print(Board())
 
-Location()
+def SwitchPlayer(player):
+    
+    if player == "X":
+        player = "O"
+    elif player == "O":
+        player = "X"
+    return player
 
-# def Location():
-#     valid = True/False:
-#     row, col = AskMove()
-#     while not valid:
-#         if row <= 0 and row >= 3 and col <= 0 and col >= 3:
-#             print("Invalid input. Please select a value between 1 and 3")
-#             row, col = AskMove()
+def PlayGame():
+    Board()
+    global player
+    count = 1
+    while count <= 9:
+        Location(player)
+        count +=1
+        player = SwitchPlayer(player)
 
-#         elif board[row][col] != "_":
-#             print("That spot is already taken. Please select another value between 1 and 3")
-#             row, col = AskMove()
+def WinConditions():
+    for x in range(3):
+
         
-#         else:
-#             board[row][col] = player
+
+
+
             
 
 
@@ -49,9 +50,3 @@ Location()
 
       
 
-# def SwitchPlayer():
-#     if player == "X":
-#         player == "Y"
-#     elif player == "Y":
-#         player == "X"
-#     return player
