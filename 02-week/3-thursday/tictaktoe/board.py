@@ -1,24 +1,32 @@
-# playing_board = [["_" for j in range(3)] for i in range(3)]
-# player = "X"
-board = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0],
-]
-print(board[0])
-print(board[1])
-print(board[2])
+playing_board = [["_" for j in range(3)] for i in range(3)]
+player = "X"
+# board = [
+#     [0, 0, 0],
+#     [0, 0, 0],
+#     [0, 0, 0],
+# ]
+# print(board[0])
+# print(board[1])
+# print(board[2])
 
-# def Board():
-#     for i in range(3):
-#         row = "| "
-#         for j in range(3):
-#             row += (board[i][j] + " | ")
-#         print(row)
+def Board():
+    for i in range(3):
+        row = "| "
+        for j in range(3):
+            row += (playing_board[i][j] + " | ")
+        print(row)
 
+def AskMove():
+    row = int(input("Which row (1-3)?")) - 1
+    col = int(input("Which column (1-3)?")) -1
+    return row, col
 
+def Location():
+    row, col = AskMove()
+    playing_board[row][col] = player 
+    print(Board())
 
-
+Location()
 
 # def Location():
 #     valid = True/False:
@@ -41,9 +49,9 @@ print(board[2])
 
       
 
-def SwitchPlayer():
-    if player == "X":
-        player == "Y"
-    elif player == "Y":
-        player == "X"
-    return player
+# def SwitchPlayer():
+#     if player == "X":
+#         player == "Y"
+#     elif player == "Y":
+#         player == "X"
+#     return player
