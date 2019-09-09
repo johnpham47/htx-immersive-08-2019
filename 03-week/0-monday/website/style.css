@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    position: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+  background-color: black;
+}
+  header * {
+    display: inline;
+    height: 50px;
+ }
+ section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+ }
+
+#hero {
+    background-image: url('https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/46786463_2173181509372414_2859311624760590336_n.jpg?_nc_cat=104&_nc_oc=AQm-Gp4pYvaA3N6tps8DCX9CCL183u6ZeMX6TduP1GnhwhsZ1JQQnhSJ5TuOeSEnv_s&_nc_ht=scontent-ort2-1.xx&oh=3d4fd160a91c688adfebdff404dfd30f&oe=5E0EA03F');
+    background-size: 700px 700px;
+}
+#about {
+  background-image: url('https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/46516842_2173180999372465_4786784413381820416_n.jpg?_nc_cat=101&_nc_oc=AQkSQXFtf92toLSoCur5FJutfNXDc0Cfr-57uhuFtARTlbnQ_M6Q3O-oDDqHWq9NN1c&_nc_ht=scontent-ort2-1.xx&oh=d4371320b93184a34ba70c30d214ea4e&oe=5E0EA5DF');
+  background-size: 500px 450px;
+}
+#contact {
+  background-image: url('https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/46516842_2173180999372465_4786784413381820416_n.jpg?_nc_cat=101&_nc_oc=AQkSQXFtf92toLSoCur5FJutfNXDc0Cfr-57uhuFtARTlbnQ_M6Q3O-oDDqHWq9NN1c&_nc_ht=scontent-ort2-1.xx&oh=d4371320b93184a34ba70c30d214ea4e&oe=5E0EA5DF');
+  background-size: 500px 450px;
+}
