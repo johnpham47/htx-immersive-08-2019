@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Positioning</title>
+
+    <!-- <style>
+        * {
+            box-sizing: border-box;  
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            border: 3px solid purple;
+            width: 100%;
+            height: 100vh;
+            position:relative;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+            
+        .leftbox {
+            position:absolute;
+            background-color: red;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .rightbox {
+            position:absolute;
+            background-color: blue;
+            right: 0;
+            width: 80%;
+            height: 100%;
+            text-align: center;
+
+        }
+
+    
+    </style>
+ </head>
+
+ <body>
+     <div class="rightbox">Right Box</div>
+     <div class="leftbox">Left Box</div>
+
+</body>
+ -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            
+            width: 100%;
+            height: 100vh;
+            position: relative
+        }
+
+        .header {
+            background-color: orange;
+            height: 10%;
+            color: black;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            
+            
+        }
+
+         
+
+        .left {
+            background-color: red;
+            height: 100%;
+            width: 20%;
+            color: white;
+            text-align: center;
+            position: absolute;
+
+        }
+
+        .right {
+            background-color: blue;
+            right: 0;
+            height: 100%;
+            width: 20%;
+            color: white;
+            text-align: center;
+            position: absolute;
+        }
+
+        .center {
+            background-color: purple;
+            height: 100%;
+            width: 100%;
+            color: white;
+            text-align: center;
+            position: absolute;
+            
+        }
+
+        .footer {
+            background-color: magenta;
+            bottom: 0;
+            height: 10%;
+            width: 100%;
+            color: black;
+            text-align: center;
+            position: fixed;
+
+        }
+    </style>
+  </head>
+
+  <body>
+    
+    
+    <div class="container">
+          <!-- <div class="center">Center Column</div> -->
+          <div class="left">Left Column</div>
+          <div class="right">Right Column</div>
+          <div class="header">HeaderText</div>
+          <div class="footer">FooterText</div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="header">HeaderText</div>
+
+    </div> -->
+      
+      
+  </body>
