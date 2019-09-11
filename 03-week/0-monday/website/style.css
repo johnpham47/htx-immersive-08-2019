@@ -10,15 +10,17 @@ header {
 }
   header * {
     display: inline;
-    height: 50px;
  }
+
+/* .class {
+    
+} */
+
  section {
     height: 100vh;
     border: 1px solid black;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
     
     background-size: cover; /* Add this line */
     background-position: center center; /* Add this line */
