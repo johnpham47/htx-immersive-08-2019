@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex Exercise 1</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        margin: 0;
+      }
+      
+      .Header {
+        display: flex;
+        /* justify-content: space-between; */
+        background-color: violet;
+        color: white;
+        padding: 20px;
+      }
+      .container {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+
+      }
+      
+      .main {
+        padding: 100px;
+        background-color: red;
+        color: white;
+        order:1;
+        flex-wrap: wrap;
+        /* flex-grow: 2; */
+      }
+      .sidebar {
+        padding: 100 0px;
+        background-color: blue;
+        color: white;
+        order:0;
+        flex-wrap: wrap;
+        /* flex-grow: 1; */
+      }
+
+      .footer {
+        display: flex;
+        /* justify-content: space-between; */
+        background-color: violet;
+        color: white;
+        padding: 20px;
+      }
+    
+    
+    </style>
+  </head>
+  <body>
+    <div class="Header">Header</div>
+    <div class="container">
+      <div class="main">Main Content</div>
+      <div class="sidebar">Sidebar</div>
+
+    </div>
+    <div class="footer">Footer</div>
+  </body>
