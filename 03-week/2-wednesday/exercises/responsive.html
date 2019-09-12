@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex Exercise 1</title>
+    <style>
+      * {
+          box-sizing: border-box
+      }
+      
+      
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+      }
+
+
+      .title {
+          color:white;
+      }
+      
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        background-color:blueviolet;
+        color: white;
+        padding: 20px;
+
+      }
+
+      .menu {
+          display: flex;
+
+      }
+      .container {
+        margin: 0;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+
+      }
+      
+      .main {
+        padding: 75px;
+        background-color: red;
+        color: white;
+        text-align: center;
+
+      }
+
+      
+      .main3 {
+        display:flex;
+        justify-content: space-around;
+        padding: 75px;
+        background-color: blue;
+        color: white;
+
+      }
+
+      .footer {
+        display: flex;
+        /* justify-content: space-between; */
+        background-color: violet;
+        color: white;
+        padding: 20px;
+
+      }
+      
+      .menu > li {
+          margin-right: 10px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+        <div class="title">Lorum Ipsum</div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Company</li>
+            <li>Blog</li>
+        </ul>
+        
+    </div>
+    <div class="container">
+      <div class="main">We Are Awesome</div>
+      <div class="main3">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/50434540_2261463087210922_3996720867135455232_n.jpg?_nc_cat=110&_nc_oc=AQlUAWBtNn-1Ppggz0LDTWKDBlo_eIfN2yL3z5f5OtCWj1-TjAqHfTPAW_w5mI2BtBU&_nc_ht=scontent-ort2-1.xx&oh=6ce632b61b0192c6e7dce3258fc80e12&oe=5DF2E2A6" alt="R.I.P">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/50434540_2261463087210922_3996720867135455232_n.jpg?_nc_cat=110&_nc_oc=AQlUAWBtNn-1Ppggz0LDTWKDBlo_eIfN2yL3z5f5OtCWj1-TjAqHfTPAW_w5mI2BtBU&_nc_ht=scontent-ort2-1.xx&oh=6ce632b61b0192c6e7dce3258fc80e12&oe=5DF2E2A6" 
+                        alt="Oops."  />
+
+      </div>
+
+    </div>
+    <div class="footer">Footer</div>
+  </body>
