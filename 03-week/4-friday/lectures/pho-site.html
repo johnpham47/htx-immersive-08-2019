@@ -4,16 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Awesome</title>
+        <title>Huynh Restaurant</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
             body {
-                background: url('https://c8.alamy.com/comp/JCFY84/pho-bo-vietnamese-soup-with-beef-on-bamboo-tray-on-wooden-background-JCFY84.jpg') no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                background-size: cover;
-                -o-background-size: cover;
+              padding: 0;
+              margin: 0;
+              background: #BEB7A4;
             }
+            
             .navbar {
                 background:orangered;
             }
@@ -32,15 +31,57 @@
             .navbar-collapse {
                 justify-content: flex-end;
             }
+            
+            .header {
+              background-image: url('https://c8.alamy.com/comp/JCFY84/pho-bo-vietnamese-soup-with-beef-on-bamboo-tray-on-wooden-background-JCFY84.jpg');
+              background-size: cover;
+              background-position: center;
+              position: relative;
+              height: 100vh;
+            }
+            
+            .overlay {
+              position: absolute;
+              min-height: 100%;
+              min-width: 100%;
+              left: 0;
+              top: 0;
+              background: rgba(0, 0, 0, 0.6);
+            }
 
-        
+            .description {
+              
+              position: absolute;
+              top: 45%;
+              text-align: center;
+
+            }
+
+            .description h1 {
+              color: #FF7F11;
+            }
+
+            .description p {
+              color: #FFFFFC;
+              
+              line-height: 1.5;
+            }
+
+            .page-footer {
+              background-color: #000000;
+              color: #FFFFFC;
+              padding: 10px 0 5px;
+              font-size: 15px;
+            }
         </style>
     
     </head>
 
     <body>
-            <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="#">Logo</a>
+            <!-- Navbar -->
+      
+                    <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="#">Huynh Restaurant</a>
                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -53,10 +94,40 @@
                           <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
+                          <a class="nav-link" href="#">Lunch Menu</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Dinner Menu</a>
+                        </li>
+                        <li class="nav-item">
                           <a class="nav-link" href="#">Contact</a>
                         </li>
                       </ul>
                     </div>
                   </nav>
+
+                  <header class="header container-fluid">
+                    <div class="overlay"></div>
+                    <div class="description">
+                      <h1>Huynh Landing Page</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
+                    </div>
+                  </header>
+                 <!-- Body Content -->
+                 
+                  <!-- Footer -->
+                <footer class="page-footer">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+                  
+
     </body>
 </html>
