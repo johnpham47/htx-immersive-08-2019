@@ -1,3 +1,4 @@
+var parent = document.getElementById("container");
 // SITE NAME
 var topPage = document.createElement("header");
 var logo = document.createElement("h1");
@@ -8,8 +9,25 @@ function buildNav() {
     var navigation = document.createElement("nav");
     var navUl = document.createElement("ul");
 
-    ["Home, Categories, About"].forEach(item =>)
+    ["Home, Categories, About"].forEach(item => {
+        var li = document.createElement("li");
+        var link = document.createElement("a");
+        link.setAttribute("href", "#");
+        link.textContent = item;
+        li.appendChild(link);
+        navUl.appendChild(li);
+    }
+    );
+    
+    navigation.appendChild(navUl);
+    topPage.appendChild(logo);
+    return navigation;
 }
+
+var navigation = buildNav();
+topPage.appendChild(navigation);
+
+parent.appendChild(topPage);
 
 
 
@@ -17,8 +35,6 @@ function buildNav() {
 var header1 = document.createElement("h1");
 var node = document.createTextNode("Curse of the Current Reviews");
 header1.appendChild(node);
-
-var parent = document.getElementById("container");
 parent.appendChild(header1);
 
 
