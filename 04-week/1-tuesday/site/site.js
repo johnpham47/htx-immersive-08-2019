@@ -9,7 +9,7 @@ function buildNav() {
     var navigation = document.createElement("nav");
     var navUl = document.createElement("ul");
 
-    ["Home, Categories, About"].forEach(item => {
+    ["Home", "Categories", "About"].forEach(item => {
         var li = document.createElement("li");
         var link = document.createElement("a");
         link.setAttribute("href", "#");
@@ -32,7 +32,7 @@ parent.appendChild(topPage);
 
 
 // FIRST HEADER
-var header1 = document.createElement("h1");
+var header1 = document.createElement("h2");
 var node = document.createTextNode("Curse of the Current Reviews");
 header1.appendChild(node);
 parent.appendChild(header1);
@@ -46,7 +46,7 @@ header1.appendChild(para1);
 
 
 // WATCHKIT HEADER
-var header2 = document.createElement("h2");
+var header2 = document.createElement("h3");
 var node2 = document.createTextNode("Hello WatchKit");
 header2.appendChild(node2);
 parent.appendChild(header2)
@@ -62,7 +62,7 @@ comment1.innerHTML = "12 comments      124 Likes"
 header2.appendChild(comment1);
 
 // SWIFT HEADER
-var header3 = document.createElement("h2");
+var header3 = document.createElement("h3");
 var node3 = document.createTextNode("Introduction to Swift");
 header3.appendChild(node3);
 parent.appendChild(header3);
