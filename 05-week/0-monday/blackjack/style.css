@@ -1,0 +1,21 @@
+.container {
+    background-color: #1C3A14;
+    border-radius: 200px;
+    border: 10px solid #574F2A;
+    padding: 250px;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 10px;
+}
+
+input {
+    background-color: #5D916B;
+    width: 100%;
+    height: 100px;
+}
+
+label {
+    color: antiquewhite;
+}
