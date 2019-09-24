@@ -1,12 +1,4 @@
-document.getElementById("deal-button").addEventListener("click", function(){
-    // deal logic
-    var card;
-    if (card) [
-        
-    ]
-
-    
-}); 
+document.getElementById("deal-button").addEventListener("click", deal)
 
 document.getElementById("hit-button").addEventListener("click", function(){
     // hit logic
