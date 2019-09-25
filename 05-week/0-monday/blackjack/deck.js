@@ -16,7 +16,7 @@ var CreateDeck = () => {
 var newDeck = CreateDeck();
 console.log(newDeck);
 
-// Deal the Deck
+// Draw the Deck
 // Use newDeck to push image URL to img src
 // reference last value in array for pushing
 // Increment one less from newDeck (new array?)
@@ -25,3 +25,4 @@ console.log(newDeck);
 // Call the function 4 times
 // pushing between array index[0] and array.length
 // After random selection, store the value, push it to img src then pop
+// Calculate points through parseInt
