@@ -7,7 +7,7 @@ var CreateDeck = () => {
 
     for (let suit in suits) {
         for (let value in values) {
-            deck.push(`${values[value]}` + "_of_" + `${suits[suit]}` + ".png");
+            deck.push("images/" + `${values[value]}` + "_of_" + `${suits[suit]}` + ".png");
         }
     }
 
@@ -15,3 +15,13 @@ var CreateDeck = () => {
 }
 var newDeck = CreateDeck();
 console.log(newDeck);
+
+// Deal the Deck
+// Use newDeck to push image URL to img src
+// reference last value in array for pushing
+// Increment one less from newDeck (new array?)
+ // Pop old value in newDeck
+//  Create a function for adding card to Dealer + Player Hands
+// Call the function 4 times
+// pushing between array index[0] and array.length
+// After random selection, store the value, push it to img src then pop
