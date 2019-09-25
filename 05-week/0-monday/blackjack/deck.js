@@ -16,13 +16,11 @@ var CreateDeck = () => {
 var newDeck = CreateDeck();
 console.log(newDeck);
 
-// Draw the Deck
-// Use newDeck to push image URL to img src
-// reference last value in array for pushing
-// Increment one less from newDeck (new array?)
- // Pop old value in newDeck
-//  Create a function for adding card to Dealer + Player Hands
-// Call the function 4 times
+
 // pushing between array index[0] and array.length
 // After random selection, store the value, push it to img src then pop
 // Calculate points through parseInt
+
+//Switch the /image string around
+// Grab index[0] of string
+// Use switch case to convert string values into integers

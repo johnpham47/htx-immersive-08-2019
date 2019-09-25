@@ -1,4 +1,4 @@
-// Creates a New Deck
+
 var CreateDeck = () => {
     let deck = []
     dealerHand = []
@@ -13,13 +13,15 @@ var CreateDeck = () => {
             deck.push("images/" + `${values[value]}` + "_of_" + `${suits[suit]}` + ".png");
         }
     }
-
-    return deck
+    shuffledDeck = _.shuffle(deck);
+    return shuffledDeck;
 }
 var newDeck = CreateDeck();
-console.log(newDeck);
+console.log(shuffledDeck);
 console.log(dealerHand);
 console.log(playerHand);
+
+
 
 // Pops the top card and pushes it to the player and dealer hands.
 function DealCards(handArray, elementSelector) {
