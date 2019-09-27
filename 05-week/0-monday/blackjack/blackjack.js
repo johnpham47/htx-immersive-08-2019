@@ -13,6 +13,7 @@ var CreateDeck = () => {
             deck.push("images/" + `${values[value]}` + "_of_" + `${suits[suit]}` + ".png");
         }
     }
+    // Shuffles the deck for a new game
     shuffledDeck = _.shuffle(deck);
     return shuffledDeck;
 }
@@ -31,6 +32,7 @@ function DealCards(handArray, elementSelector) {
     $(elementSelector).append(
         '<img src="' + cardUrl + '">'
     );
+    UpdatePoints();
 }
 
 // Deal Button Click
@@ -48,8 +50,45 @@ $('#hit-button').click(function() {
     DealCards(playerHand, '#player-hand');
 })
 
+// Point System
+function PointSystem(newDeck) {
+    var points = 0;
+    switch (newDeck) {
+        case 'ace':
+            points = 11
+        case '2':
+            points = 2;
+        case '3':
+            points = 3;
+        case '4':
+            points = 4;
+        case '5':
+            points = 5;
+        case '6':
+            points = 6;
+        case '7':
+            points = 7;
+        case '8':
+            points = 8;
+        case '9':
+            points = 9;
+        default:
+            points = 10;
+        
+    }
+    console.log(PointSystem)
+    return points;
+}
 
 
+// Update Score
+function UpdatePoints() {
+    var dealerPoints = PointSystem(dealerHand);
+    $('#dealer-points').text(dealerPoints);
+    var playerPoints = PointSystem(playerHand);
+    $('#player-points').text(playerPoints);
+
+}
 // var deal = (deck) => {
 //     // Dealer Deal
 
