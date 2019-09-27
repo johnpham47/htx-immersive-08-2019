@@ -1,20 +1,4 @@
-// var randomized = function randomTime() {
-//     var possibleTimes = 
-//         [1000, 
-//         2000, 
-//         3000, 
-//         4000, 
-//         5000, 
-//         6000, 
-//         7000, 
-//         8000, 
-//         9000, 
-//         10000];
-            
-//         return possibleTime[Math.floor(Math.random() * 1)];
-    
-// }
-// console.log(randomized);
+// Exercise 1
 var randomTime = (Math.floor(Math.random() * 11));
 console.log(randomTime)
 
@@ -27,19 +11,22 @@ StopWatch.then((time) => {
     console.log("It's been " + randomTime + " seconds");
 });
 
-/////////
+// Exercise 2
 
-// let myFirstPromise = new Promise((resolve, reject) => {
-//     // We call resolve(...) when what we were doing asynchronously was successful, and reject(...) when it failed.
-//     // In this example, we use setTimeout(...) to simulate async code. 
-//     // In reality, you will probably be using something like XHR or an HTML5 API.
-//     setTimeout(function(){
-//       resolve("Success!"); // Yay! Everything went well!
-//     }, 1000);
-//   });
-  
-//   myFirstPromise.then((successMessage) => {
-//     // successMessage is whatever we passed in the resolve(...) function above.
-//     // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
-//     console.log("Yay! " + successMessage);
-//   });
+var randomTimeHare = (Math.floor(Math.random() * 11));
+console.log("Hare time: " + randomTimeHare);
+
+var randomTimeTortoise = (Math.floor(Math.random() * 11));
+console.log("Tortoise time: " + randomTimeTortoise);
+
+var hare = new Promise(function(resolve,reject) {
+    setTimeout(resolve, ((randomTimeHare) * 1000), 'Hare wins!');
+});
+
+var tortoise = new Promise(function(resolve, reject) {
+    setTimeout(resolve, ((randomTimeTortoise) * 1000), "Tortoise wins!");
+})
+
+Promise.race([hare, tortoise]).then(function(winner) {
+    console.log(winner);
+});
