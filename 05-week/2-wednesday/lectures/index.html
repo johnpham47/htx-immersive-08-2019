@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-</head>
-<body>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+</head>
+<body>
+  <form id="search-term">
+    Entry:
+    <br>
+    <input id="query" type="text">
+    <br>
+    <input id="buttonID" type="submit" value="Submit" >
+    </form>
+    <div id="search-results">
+    </div>
     <script src="./omdb.js"></script>
 </body>
 </html>
