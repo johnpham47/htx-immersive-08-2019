@@ -14,19 +14,25 @@ StopWatch.then((time) => {
 // Exercise 2
 
 var randomTimeHare = (Math.floor(Math.random() * 11));
-console.log("Hare time: " + randomTimeHare);
+console.log("Hare time: " + randomTimeHare + " seconds.");
 
 var randomTimeTortoise = (Math.floor(Math.random() * 11));
-console.log("Tortoise time: " + randomTimeTortoise);
+console.log("Tortoise time: " + randomTimeTortoise + " seconds.");
 
 var hare = new Promise(function(resolve,reject) {
     setTimeout(resolve, ((randomTimeHare) * 1000), 'Hare wins!');
 });
+
 
 var tortoise = new Promise(function(resolve, reject) {
     setTimeout(resolve, ((randomTimeTortoise) * 1000), "Tortoise wins!");
 })
 
 Promise.race([hare, tortoise]).then(function(winner) {
-    console.log(winner);
+   console.log(winner);
 });
+
+// Exercise 3
+function logger(then) {
+    console.log(then)
+}
