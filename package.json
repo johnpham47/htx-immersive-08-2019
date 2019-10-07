@@ -1,0 +1,22 @@
+{
+  "name": "cowsaymoo",
+  "version": "1.0.0",
+  "description": "Cow says the moos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpham47/htx-immersive-08-2019.git"
+  },
+  "author": "John Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnpham47/htx-immersive-08-2019/issues"
+  },
+  "homepage": "https://github.com/johnpham47/htx-immersive-08-2019#readme",
+  "dependencies": {
+    "cowsay": "^1.4.0"
+  }
+}
