@@ -1,0 +1,12 @@
+extend account
+
+append content
+    br
+    h3 Welcome to the dashboard
+
+    h5 My Favorite Movies
+
+    if !favMovies.length
+        p No fav movies yet, add one below
+
+    //- Form

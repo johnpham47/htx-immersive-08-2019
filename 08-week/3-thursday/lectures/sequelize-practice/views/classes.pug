@@ -1,0 +1,9 @@
+extend layout
+
+block content
+    h3 Classes
+        ul
+            each pfclass in classes
+                li
+                 -  var classUrl = '/classes/' + pfclass.className
+                 a(href=classUrl)= pfclass.className

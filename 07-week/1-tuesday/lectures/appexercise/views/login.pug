@@ -1,0 +1,12 @@
+extend base
+
+block base
+    .container
+        .row
+            .col
+                h1 Pathfinder Characters - Login
+                form(method="POST" action="/login")
+                    .form-group
+                        label(for='email') Email address
+                        input#email.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email' name="email")
+                    button.btn.btn-primary Login

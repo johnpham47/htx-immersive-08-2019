@@ -1,0 +1,8 @@
+extend layout
+
+block content
+    a(href="/classes") Back to classes
+    h2= classes.className
+        ul
+            h4= 'Type: ' + classes.type
+            h4= 'Book: ' + classes.book

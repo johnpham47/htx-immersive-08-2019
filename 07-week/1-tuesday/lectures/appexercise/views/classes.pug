@@ -1,0 +1,9 @@
+extend layout
+
+block content
+    h2 Classes
+    ul
+    each class in classes
+        li
+            -var url = "/classes" + class.id
+            a(href=url) = class.name

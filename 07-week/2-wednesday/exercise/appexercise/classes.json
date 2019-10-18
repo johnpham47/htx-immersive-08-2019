@@ -1,0 +1,63 @@
+[
+    {
+        "id": "Barbarian",
+        "type": "Martial",
+        "book": "Core",
+    },
+
+    {
+        "id": "Bard",
+        "type": "Caster/Utility",
+        "book": "Core",
+    },
+
+    {
+        "id": "Cleric",
+        "type": "Caster",
+        "book": "Core",
+    },
+
+    {
+        "id": "Druid",
+        "type": "Caster",
+        "book": "Core",
+    },
+
+    {
+        "id": "Fighter",
+        "type": "Martial",
+        "book": "Core",
+    },
+
+    {
+        "id": "Paladin",
+        "type": "Martial",
+        "book": "Core",
+    },
+
+    {
+        "id": "Ranger",
+        "type": "Martial",
+        "book": "Core",
+    },
+
+    {
+        "id": "Rogue",
+        "type": "Utility",
+        "book": "Core",
+    },
+
+    {
+        "id": "Sorcerer",
+        "type": "Caster",
+        "book": "Core",
+    },
+
+    {
+        "id": "Wizard",
+        "type": "Caster",
+        "book": "Core",
+    },
+
+
+]
