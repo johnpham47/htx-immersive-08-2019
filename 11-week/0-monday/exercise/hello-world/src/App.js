@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 class App extends React.Component {
@@ -10,9 +12,9 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <header className="header">Header</header>
+        <Header></Header>
         <h1 className="greeting">Hello</h1>
-        <footer className="footer">Footer</footer>
+        <Footer></Footer>
       </>
     );
   }
