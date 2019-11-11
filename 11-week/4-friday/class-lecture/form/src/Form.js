@@ -22,6 +22,7 @@ export default class Form extends Component {
   }
 
   handleLikes(event) {
+    event.preventDefault();
     let newLikes = this.state.likes + 1;
     this.setState({ likes: newLikes });
   }
